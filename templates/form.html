@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Hepatitis</title>
+</head>
+<body>
+    <h1>Formulario de Predicción</h1>
+    <form action="/predecir" method="POST">
+        <h2>Datos Numéricos</h2>
+        <label>Age: <input type="number" step="any" name="Age" required></label><br>
+        <label>Bilirubin: <input type="number" step="any" name="Bilirubin" required></label><br>
+        <label>Alk_Phosphate: <input type="number" step="any" name="Alk_Phosphate" required></label><br>
+        <label>Sgot: <input type="number" step="any" name="Sgot" required></label><br>
+        <label>Albumin: <input type="number" step="any" name="Albumin" required></label><br>
+        <label>Protime: <input type="number" step="any" name="Protime" required></label><br>
+
+        <h2>Características (Checkbox)</h2>
+        <label><input type="checkbox" name="Sex" value="1"> Sex</label><br>
+        <label><input type="checkbox" name="Estado_Civil" value="1"> Estado Civil</label><br>
+        <label><input type="checkbox" name="Ciudad" value="1"> Ciudad</label><br>
+        <label><input type="checkbox" name="Steroid" value="1"> Steroid</label><br>
+        <label><input type="checkbox" name="Antivirals" value="1"> Antivirals</label><br>
+        <label><input type="checkbox" name="Fatigue" value="1"> Fatigue</label><br>
+        <label><input type="checkbox" name="Malaise" value="1"> Malaise</label><br>
+        <label><input type="checkbox" name="Anorexia" value="1"> Anorexia</label><br>
+        <label><input type="checkbox" name="Liver_Big" value="1"> Liver Big</label><br>
+        <label><input type="checkbox" name="Liver_Firm" value="1"> Liver Firm</label><br>
+        <label><input type="checkbox" name="Spleen_Palpable" value="1"> Spleen Palpable</label><br>
+        <label><input type="checkbox" name="Spiders" value="1"> Spiders</label><br>
+        <label><input type="checkbox" name="Ascites" value="1"> Ascites</label><br>
+        <label><input type="checkbox" name="Varices" value="1"> Varices</label><br>
+        <label><input type="checkbox" name="Histology" value="1"> Histology</label><br>
+
+        <button type="submit">Predecir</button>
+    </form>
+</body>
+</html>
